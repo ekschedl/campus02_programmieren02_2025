@@ -1,0 +1,5 @@
+package FieldOfStudy___E;
+
+public enum FieldOfStudy {
+    INFORMATICS, BIOLOGY, CHEMISTRY, ACCOUNTING, MATHEMATICS, NEUROSCIENCE
+}

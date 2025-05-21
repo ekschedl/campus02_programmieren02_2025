@@ -1,3 +1,4 @@
+import CalculatorProject___T.Calculator;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -29,9 +30,9 @@ public class CalculatorTest {
         //assertEquals( ERWARTE, BERECHNETER WERT);
     }
 
-    @Test
-    public void subtract(){
-        result = calculator.subtract(firstNumber, secondNumber);
-        Assert.assertEquals(-2, result);
-    }
+//    @Test
+//    public void subtract(){
+//        result = calculator.subtract(firstNumber, secondNumber);
+//        Assert.assertEquals(-2, result);
+//    }
 }

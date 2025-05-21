@@ -1,3 +1,6 @@
+import Eissorten_Junit___C_T.ComparatorPriceDESC;
+import Eissorten_Junit___C_T.Eissalon;
+import Eissorten_Junit___C_T.Eissorte;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -5,7 +8,6 @@ import org.junit.Test;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Optional;
 
 public class Eissortierungstest {
 
