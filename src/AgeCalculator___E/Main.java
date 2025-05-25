@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        System.out.println("Hi, I am your AgeCalculator!");
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter age in years: ");

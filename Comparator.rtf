@@ -1,0 +1,352 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 .SFNS-Bold;\f1\fnil\fcharset0 .SFNS-Regular;\f2\fnil\fcharset0 .AppleSystemUIFontMonospaced-Regular;
+\f3\fnil\fcharset0 HelveticaNeue-Bold;\f4\fnil\fcharset0 AppleColorEmoji;\f5\fswiss\fcharset0 Helvetica;
+\f6\froman\fcharset0 Times-Bold;\f7\froman\fcharset0 Times-Roman;\f8\froman\fcharset0 TimesNewRomanPSMT;
+\f9\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red14\green14\blue14;
+\red151\green0\blue126;\red0\green0\blue0;\red13\green100\blue1;\red135\green5\blue129;\red50\green91\blue97;
+\red20\green0\blue196;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\csgray\c100000;\cssrgb\c6700\c6700\c6700;
+\cssrgb\c66667\c5098\c56863;\csgray\c0;\cssrgb\c0\c45490\c0;\cssrgb\c60784\c13725\c57647;\cssrgb\c24706\c43137\c45490;
+\cssrgb\c10980\c0\c81176;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\b\fs30 \cf2 \cb3 Comparable<T> \'96 das nat\'fcrliche Vergleichen
+\f1\b0\fs28 \
+\
+Wenn du das Interface 
+\f2 Comparable
+\f1  in deiner Klasse implementierst (z.\uc0\u8239 B. 
+\f2 Fahrzeug implements Comparable<Fahrzeug>
+\f1 ), dann 
+\f3\b entscheidest du direkt in dieser Klasse
+\f1\b0 , wie die Objekte standardm\'e4\'dfig verglichen werden sollen. Du schreibst daf\'fcr eine 
+\f2 compareTo()
+\f1 -Methode.\
+\
+
+\f4 \uc0\u55357 \u56481 
+\f1  Beispiel: Du willst, dass Fahrzeuge nach Baujahr sortiert werden \'96 dann schreibst du 
+\f2 compareTo()
+\f1  in der Klasse 
+\f2 Fahrzeug
+\f1 .\
+\
+
+\f4 \uc0\u55357 \u56393 
+\f1  Vorteil: Die Objekte wissen selbst, wie sie sich vergleichen sollen.\
+
+\f4 \uc0\u55357 \u56393 
+\f1  Nachteil: Es ist 
+\f3\b nur eine
+\f1\b0  Vergleichslogik m\'f6glich, z.\uc0\u8239 B. nur nach Baujahr.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f5\fs24 \cf2 \
+
+\f1 \uc0\u11835 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1870\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth4254\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth3828\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sa240\qc\partightenfactor0
+
+\f6\b \cf0 \cb1 \expnd0\expndtw0\kerning0
+Merkmal\cell 
+\pard\intbl\itap1\pardeftab720\sa240\qc\partightenfactor0
+\cf0 Comparable<T>\cell 
+\pard\intbl\itap1\pardeftab720\sa240\qc\partightenfactor0
+\cf0 Comparator<T>\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1870\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth4254\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth3828\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+
+\f7\b0 \cf0 Zweck\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+
+\f6\b \cf0 Nat\'fcrliche Sortierreihenfolge
+\f7\b0  einer Klasse\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+
+\f6\b \cf0 Benutzerdefinierte Sortierung
+\f7\b0 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1870\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth4254\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth3828\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Methode\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 compareTo(T other)\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 compare(T o1, T o2)\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1870\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth4254\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth3828\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Wo implementiert\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 In der 
+\f6\b Klasse selbst
+\f7\b0 \cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 In einer 
+\f6\b externen Klasse oder anonym
+\f7\b0 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1870\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth4254\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth3828\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Wie viele m\'f6glich?\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Nur 
+\f6\b eine
+\f7\b0  Sortierlogik pro Klasse\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+
+\f6\b \cf0 Beliebig viele
+\f7\b0  m\'f6glich\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1870\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth4254\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth3828\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Verwendung mit\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Collections.sort(list) oder Arrays.sort()\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Collections.sort(list, comparator)\cell \lastrow\row
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f5 \cf2 \cb3 \kerning1\expnd0\expndtw0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf2 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f4\fs30 \cf2 \uc0\u55357 \u56633 
+\f0\b  Comparator<T> \'96 das flexible Vergleichen
+\f1\b0\fs28 \
+\
+Ein 
+\f2 Comparator
+\f1  ist 
+\f3\b eine separate Klasse oder Lambda-Funktion
+\f1\b0 , die du erstellen kannst, um Objekte 
+\f3\b von au\'dfen
+\f1\b0  zu vergleichen. Du kannst damit mehrere Vergleichsarten definieren, z.\uc0\u8239 B. einmal nach Baujahr, einmal nach Marke, einmal nach PS usw.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f4 \cf2 \uc0\u55357 \u56481 
+\f1  Beispiel: Du willst Fahrzeuge mal nach Baujahr, mal nach Versicherungswert sortieren \'96 dann erstellst du mehrere 
+\f2 Comparator
+\f1 -Klassen oder verwendest Lambdas.\
+\
+
+\f4 \uc0\u55357 \u56393 
+\f1  Vorteil: Sehr flexibel \'96 du kannst viele verschiedene Sortierarten erstellen.\
+
+\f4 \uc0\u55357 \u56393 
+\f1  Nachteil: Etwas mehr Code, da du externe Klassen schreiben musst.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f5\fs24 \cf2 \
+
+\f1 \uc0\u11835 
+\f5 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf2 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f4\fs30 \cf2 \uc0\u55358 \u56800 
+\f0\b  Zusammenfassung:
+\f1\b0\fs28 \
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f2 Comparable
+\f1 : in der Klasse selbst, nur 
+\f3\b eine feste Sortierregel
+\f1\b0 \
+	\'95	
+\f2 Comparator
+\f1 : au\'dferhalb der Klasse, 
+\f3\b viele Sortierm\'f6glichkeiten
+\f1\b0 \
+\
+Wenn du flexibel bleiben willst \'96 verwende 
+\f2 Comparator
+\f1 .\
+Wenn es 
+\f3\b eine klare, nat\'fcrliche Reihenfolge
+\f1\b0  gibt \'96 verwende 
+\f2 Comparable
+\f1 .\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f4\fs30 \cf4 \cb1 \uc0\u9989 
+\f0\b  Unterschied: Comparable vs Comparator
+\f1\b0\fs28 \
+\
+
+\f4\fs26 \uc0\u55357 \u56524 
+\f0\b  Comparable:
+\f1\b0\fs28 \
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f8 \cf4 	1.	Wird 
+\f3\b in der Klasse selbst
+\f1\b0  implementiert\
+
+\f8 	2.	Methode: 
+\f2 int compareTo(T other)
+\f1 \
+
+\f8 	3.	Nur 
+\f3\b eine
+\f1\b0  nat\'fcrliche Sortierreihenfolge m\'f6glich\
+
+\f8 	4.	Wird mit 
+\f2 Collections.sort(liste)
+\f1  oder 
+\f2 Arrays.sort(array)
+\f1  verwendet\
+
+\f8 	5.	Ideal, wenn du 
+\f3\b eine Standard-Sortierung
+\f1\b0  brauchst\
+
+\f8 	6.	Beispiel: 
+\f2 Person implements Comparable<Person>
+\f1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f5\fs24 \cf0 \
+
+\f1 \uc0\u11835 
+\f5 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf4 \
+
+\f4\fs26 \uc0\u55357 \u56524 
+\f0\b  Comparator:
+\f1\b0\fs28 \
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f8 \cf4 	1.	Wird 
+\f3\b extern (au\'dferhalb der Klasse)
+\f1\b0  geschrieben\
+
+\f8 	2.	Methode: 
+\f2 int compare(T o1, T o2)
+\f1 \
+
+\f8 	3.	Du kannst 
+\f3\b mehrere Vergleichslogiken
+\f1\b0  erstellen\
+
+\f8 	4.	Wird mit 
+\f2 Collections.sort(liste, comparator)
+\f1  verwendet\
+
+\f8 	5.	Ideal f\'fcr 
+\f3\b flexible oder mehrere Sortierungen
+\f1\b0 \
+
+\f8 	6.	Beispiel: 
+\f2 NameComparator implements Comparator<Person>
+\f1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f5\fs24 \cf0 \
+
+\f1 \uc0\u11835 
+\f5 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f1\fs28 \cf4 \
+
+\f4\fs30 \uc0\u55357 \u56577 
+\f0\b  Merksatz:
+\f1\b0\fs28 \
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf4 	\'95	
+\f4 \uc0\u55357 \u56633 
+\f1  
+\f2 Comparable
+\f1  = 
+\f3\b \'84Ich sortiere mich selbst\'93
+\f1\b0 \
+	\'95	
+\f4 \uc0\u55357 \u56633 
+\f1  
+\f2 Comparator
+\f1  = 
+\f3\b \'84Ich werde von au\'dfen sortiert\'93
+\f1\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f5\fs24 \cf0 \
+
+\f1 \uc0\u11835 
+\f5 \
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+
+\f4\fs28 \cf2 \cb3 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f9\fs26 \cf2 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2 \cf5 \cb1 public\cf6  \cf5 class\cf6  Person \cf5 implements\cf6  Comparable<Person> \{\
+    \cf5 private\cf6  String name;\
+    \cf5 private\cf6  int age;\
+\
+    \cf7 // Konstruktor, Getter usw. hier ...\cf6 \
+\
+    \cf8 @Override\cf6 \
+    \cf5 public\cf6  int compareTo(Person other) \{\
+        \cf7 // 
+\f4 1\uc0\u65039 \u8419 
+\f2  Zuerst Alter vergleichen\cf6 \
+        int \cf9 result\cf6  = this.age - other.age;\
+\
+        \cf7 // 
+\f4 2\uc0\u65039 \u8419 
+\f2  Wenn Alter gleich ist \uc0\u8594  Namen vergleichen\cf6 \
+        \cf5 if\cf6  (result == \cf10 0\cf6 ) \{\
+            result = this.name.compareTo(other.name);\
+        \}\
+\
+        \cf5 return\cf6  result;\
+    \}\
+\}\
+\
+\
+\cf5 public\cf6  \cf5 class\cf6  Person \cf5 implements\cf6  Comparable<Person> \{\
+    \cf8 @Override\cf6 \
+    \cf5 public\cf6  int compareTo(Person other) \{\
+        \cf5 return\cf6  this.age - other.age;\
+    \}\
+\}\
+\
+\cf5 public\cf6  \cf5 class\cf6  NameComparator \cf5 implements\cf6  Comparator<Person> \{\
+    \cf5 public\cf6  int compare(Person a, Person b) \{\
+        \cf5 return\cf6  a.name.compareTo(b.name);\
+    \}\
+\}}

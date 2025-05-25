@@ -1,0 +1,126 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 .SFNS-Regular;\f1\fnil\fcharset0 HelveticaNeue-Bold;\f2\fnil\fcharset0 AppleColorEmoji;
+\f3\fnil\fcharset0 .SFNS-Bold;\f4\fnil\fcharset77 ZapfDingbatsITC;\f5\fnil\fcharset0 .AppleSystemUIFontMonospaced-Regular;
+\f6\fswiss\fcharset0 Helvetica;\f7\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red14\green14\blue14;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c6700\c6700\c6700;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2  In:nb.JG9!$c49Ta\
+\
+\
+
+\f1\b Wrapper-Klassen
+\f0\b0  \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f2\fs30 \cf2 \uc0\u55357 \u56633 
+\f3\b  Was sind Wrapper-Klassen?
+\f0\b0\fs28 \
+\
+Wrapper-Klassen sind 
+\f1\b Objekte f\'fcr primitive Datentypen
+\f0\b0 .\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f4 \cf2 \uc0\u10145 
+\f0  Sie werden z.\uc0\u8239 B. gebraucht in Collections wie 
+\f5 ArrayList
+\f0 , weil diese 
+\f1\b nur Objekte speichern k\'f6nnen
+\f0\b0 .\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f6\fs24 \cf0 \
+
+\f0 \uc0\u11835 
+\f7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Erlaubt dort primitive Datentypen zu verwenden, wo eigentlich Objekte erwartet werden; z.B.: beim Arbeiten mit GenericsWrapper Klassen k\'f6nnen null sein, primitive Datentypen nichtWrapper Klassen bringen eigene Methoden mit
+\f6 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f2\fs30 \cf2 \uc0\u55357 \u56633 
+\f3\b  Zuordnung von primitiven Typen zu Wrapper-Klassen:
+\f0\b0\fs28 \
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f5 int
+\f0  \uc0\u8594  
+\f5 Integer
+\f0 \
+	\'95	
+\f5 double
+\f0  \uc0\u8594  
+\f5 Double
+\f0 \
+	\'95	
+\f5 char
+\f0  \uc0\u8594  
+\f5 Character
+\f0 \
+	\'95	
+\f5 boolean
+\f0  \uc0\u8594  
+\f5 Boolean
+\f0 \
+	\'95	
+\f5 long
+\f0  \uc0\u8594  
+\f5 Long
+\f0 \
+	\'95	
+\f5 float
+\f0  \uc0\u8594  
+\f5 Float
+\f0 \
+	\'95	
+\f5 byte
+\f0  \uc0\u8594  
+\f5 Byte
+\f0 \
+	\'95	
+\f5 short
+\f0  \uc0\u8594  
+\f5 Short
+\f0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f6\fs24 \cf0 \
+
+\f0 \uc0\u11835 
+\f6 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f3\b\fs30 \cf2 Warum braucht man sie?
+\f0\b0\fs28 \
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Collections speichern 
+\f1\b nur Objekte
+\f0\b0 \
+	\'95	Wrapper-Klassen bieten zus\'e4tzlich praktische Methoden (z.\uc0\u8239 B. 
+\f5 Integer.parseInt()
+\f0 )\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f2\fs30 \cf2 \uc0\u55357 \u56633 
+\f3\b  Autoboxing (automatisch: primitiver Typ \uc0\u8594  Objekt)\
+\
+int x = 5;\
+Integer xObj = x;  // autoboxing passiert automatisch\
+
+\f2\b0 \uc0\u55357 \u56633 
+\f3\b  Unboxing\
+Integer yObj = 10;\
+int y = yObj;  // unboxing passiert automatisch\
+\
+\
+Beispiel:\
+ArrayList<Integer> zahlen = new ArrayList<>();\
+zahlen.add(7);              // autoboxing: int \uc0\u8594  Integer\
+int z = zahlen.get(0);      // unboxing: Integer \uc0\u8594  int}
