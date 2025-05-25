@@ -1,8 +1,31 @@
 package u_Musikanten____leer____2023___PR.musikanten;
 
-public class Hund {
+public class Hund extends Musikant{
 	protected double bellLautstaerke;
-	public Hund(int aB, Instrument i , double bellLautstaerke) {
-	
+
+	public Hund(int anzahlBeine, Instrument instrument, double bellLautstaerke) {
+		super(anzahlBeine, instrument);
+		this.bellLautstaerke = bellLautstaerke;
+	}
+
+	public double getBellLautstaerke() {
+		return bellLautstaerke;
+	}
+
+	@Override
+	public String toString() {
+		return " " + getClass().getSimpleName()+" " + getBellLautstaerke() + ": " + super.toString();
+	}
+
+	@Override
+	public int verscheucheRaeuber() {
+		if (bellLautstaerke > instrument.getLautstaerke()) {
+			return (int) Math.floor(bellLautstaerke);
+		}
+		return (int) Math.floor(instrument.getLautstaerke());
+	}
+	@Override
+	public double spieleMusik() {
+		return (bellLautstaerke+instrument.getLautstaerke())/2;
 	}
 }
