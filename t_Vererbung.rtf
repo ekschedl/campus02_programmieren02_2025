@@ -1,0 +1,301 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 AppleColorEmoji;\f1\fnil\fcharset0 .SFNS-Bold;\f2\fnil\fcharset0 .SFNS-Regular;
+\f3\fnil\fcharset0 HelveticaNeue-Bold;\f4\fswiss\fcharset0 Helvetica;\f5\fnil\fcharset0 .AppleSystemUIFontMonospaced-Regular;
+\f6\froman\fcharset0 Times-Roman;\f7\froman\fcharset0 Times-Bold;}
+{\colortbl;\red255\green255\blue255;\red14\green14\blue14;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c6700\c6700\c6700;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs34 \cf2 \uc0\u55356 \u57119 
+\f1\b  Wiederverwendbarkeit von Klassen \'96 Motivation
+\f2\b0\fs28 \
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f3\b Wiederverwendbarkeit
+\f2\b0  und 
+\f3\b Erweiterbarkeit
+\f2\b0  von Software sind zentrale Qualit\'e4tsmerkmale.\
+	\'95	Durch den Einsatz 
+\f3\b erprobter Komponenten
+\f2\b0  wird die Software 
+\f3\b stabiler
+\f2\b0  und 
+\f3\b robuster
+\f2\b0 .\
+	\'95	Es entsteht eine 
+\f3\b Zeitersparnis
+\f2\b0  in der Entwicklung, weil bereits bestehende L\'f6sungen genutzt werden k\'f6nnen.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs24 \cf0 \
+
+\f2 \uc0\u11835 
+\f4 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f2\fs28 \cf2 \
+
+\f0\fs34 \uc0\u55357 \u56577 
+\f1\b  Zwei Wege zur Wiederverwendung von Klassen:
+\f2\b0\fs28 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f1\b\fs30 \cf2 1. Komposition (\'84hat ein\'93) \uc0\u8594  HAS-A Beziehung
+\f2\b0\fs28 \
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Eine Klasse 
+\f3\b besteht aus
+\f2\b0  anderen Klassen.\
+	\'95	Beispiel: Eine 
+\f5 Person
+\f2  
+\f3\b hat eine
+\f2\b0  
+\f5 Adresse
+\f2  oder 
+\f3\b hat einen
+\f2\b0  
+\f5 Hund
+\f2 .\
+	\'95	Die Beziehung beschreibt ein 
+\f3\b Ganzes und seine Teile
+\f2\b0 .\
+	\'95	
+\f3\b Unabh\'e4ngig
+\f2\b0  von der Schnittstelle der eingebetteten Klasse.\
+	\'95	Vorteil: Mehrere unterschiedliche Klassen k\'f6nnen kombiniert werden.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f1\b\fs30 \cf2 2. Vererbung (\'84ist ein\'93) \uc0\u8594  IS-A Beziehung
+\f2\b0\fs28 \
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Eine Klasse 
+\f3\b erbt
+\f2\b0  von einer anderen Klasse.\
+	\'95	Die neue Klasse bekommt alle 
+\f3\b nicht privaten
+\f2\b0  Eigenschaften und Methoden der Basisklasse.\
+	\'95	Beispiel: 
+\f5 Student
+\f2  
+\f3\b ist ein
+\f2\b0  
+\f5 Person
+\f2 .\
+	\'95	Es entsteht eine 
+\f3\b konkretere Spezialisierung
+\f2\b0  eines allgemeinen Typs.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs24 \cf0 \
+
+\f2 \uc0\u11835 
+\f4 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f2\fs28 \cf2 \
+
+\f0\fs34 \uc0\u55357 \u56538 
+\f1\b  Klassendiagramm-Beziehungen
+\f2\b0\fs28 \
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f3\b Komposition (HAS-A)
+\f2\b0 : Eine Klasse enth\'e4lt andere Klassen als Attribute.\
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	z.\uc0\u8239 B. 
+\f5 Person
+\f2  hat 
+\f5 Adresse
+\f2 , 
+\f5 Auto
+\f2  hat 
+\f5 Sitze
+\f2 \
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f3\b Vererbung (IS-A)
+\f2\b0 : Eine Klasse ist eine spezielle Form einer anderen.\
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	z.\uc0\u8239 B. 
+\f5 VW Golf
+\f2  ist ein 
+\f5 Auto
+\f2 , 
+\f5 Kind
+\f2  ist eine 
+\f5 Person
+\f2 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs24 \cf0 \
+
+\f2 \uc0\u11835 
+\f4 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f2\fs28 \cf2 \
+
+\f0\fs34 \uc0\u55358 \u56817 
+\f1\b  Komposition \'96 Eigenschaften
+\f2\b0\fs28 \
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Klassen arbeiten 
+\f3\b zusammen
+\f2\b0 , ohne voneinander abzuh\'e4ngen.\
+	\'95	Es ist die einzige M\'f6glichkeit, 
+\f3\b mehrere unterschiedliche Klassen
+\f2\b0  zu kombinieren.\
+	\'95	Beispiele:\
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	
+\f5 Person
+\f2  mit 
+\f5 Address
+\f2 \
+	\'95	
+\f5 Person
+\f2  mit 
+\f5 Dog
+\f2 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs24 \cf0 \
+
+\f2 \uc0\u11835 
+\f4 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f2\fs28 \cf2 \
+
+\f0\fs34 \uc0\u55358 \u56812 
+\f1\b  Vererbung \'96 Definition
+\f2\b0\fs28 \
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Eine Klasse wird von einer 
+\f3\b anderen Klasse abgeleitet
+\f2\b0 , um 
+\f3\b Funktionalit\'e4t zu erben und zu erweitern
+\f2\b0 .\
+	\'95	Das Schl\'fcsselwort in Java ist 
+\f5 extends
+\f2 .\
+	\'95	Die abgeleitete Klasse ist automatisch ein 
+\f3\b Subtyp
+\f2\b0  der Basisklasse.\
+	\'95	Wird verwendet, wenn ein Objekt eine 
+\f3\b spezielle Version
+\f2\b0  eines anderen ist.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs24 \cf0 \
+
+\f2 \uc0\u11835 
+\f4 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f2\fs28 \cf2 \
+
+\f0\fs34 \uc0\u55357 \u56590 
+\f1\b  Vererbung \'96 Eigenschaften
+\f2\b0\fs28 \
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Die neue Klasse (Subklasse):\
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Hat 
+\f3\b mindestens dieselbe Schnittstelle
+\f2\b0 \
+	\'95	Hat 
+\f3\b denselben Typ
+\f2\b0 \
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Vorteil: Methoden der Basisklasse m\'fcssen 
+\f3\b nicht neu geschrieben
+\f2\b0  werden.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs24 \cf0 \
+
+\f2 \uc0\u11835 
+\f4 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f2\fs28 \cf2 \
+
+\f0\fs34 \uc0\u9878 \u65039 
+\f1\b  Vererbung vs. Komposition\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1253\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth746\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth2592\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+
+\f6\b0\fs24 \cf0 \expnd0\expndtw0\kerning0
+Vererbung\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+
+\f7\b \cf0 IS-A
+\f6\b0 \cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Customer ist eine Person\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1253\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth746\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth2592\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Komposition\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+
+\f7\b \cf0 HAS-A
+\f6\b0 \cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Customer hat eine Address\
+Begriffe:Basisklasse\cell \lastrow\row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\cell
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Base Class / Superclass\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1806\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Abgeleitete Klasse\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Subclass / Child Class\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1806\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Ableitung\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Deriving\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1806\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth2260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Spezialisierung\cell 
+\pard\intbl\itap1\pardeftab720\sa240\partightenfactor0
+\cf0 Specialization\cell \lastrow\row
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+
+\f2\fs28 \cf2 \kerning1\expnd0\expndtw0 	\'95	
+\f5 Hund
+\f2  
+\f3\b erbt
+\f2\b0  alle 
+\f3\b nicht privaten
+\f2\b0  Attribute und Methoden von 
+\f5 Tier
+\f2 .\
+}

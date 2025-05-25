@@ -6,10 +6,11 @@ import java.time.temporal.ChronoUnit;
 public class Dates {
     public static void main(String[] args) {
         //create
-
+        //Localdate Immutable (= unveränderbar):
         LocalDate today = LocalDate.now();
         System.out.println(today);
-
+        LocalDate tomorrow = today.plusDays(1);  // today bleibt gleich
+        System.out.println("Morgen: " + tomorrow);
         LocalDate startOfStudies = LocalDate.of(2025, 3, 3);
         System.out.println(startOfStudies);
 
@@ -39,3 +40,13 @@ public class Dates {
         System.out.println("months: " + period.get(ChronoUnit.MONTHS) + " days: " + period.get(ChronoUnit.DAYS));
     }
 }
+/*	•	Thread-safe:
+Weil sich LocalDate nie verändert, können mehrere Threads damit arbeiten, ohne Fehler zu verursachen.
+	•	Vergleichs-Methoden:
+	•	isBefore(otherDate)
+	•	isAfter(otherDate)
+	•	isEqual(otherDate)
+	•	until(otherDate) → Berechnet Abstand zwischen zwei Daten
+	•	Manipulations-Methoden:
+	•	plusDays(int), minusMonths(int)
+	•	plusWeeks(), plusYears(), usw.*/
