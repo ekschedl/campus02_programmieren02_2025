@@ -1,6 +1,6 @@
 import org.junit.Before;
 import org.junit.Test;
-import u_Musikanten____leer____2023___PR.musikanten.*;
+import u_Musikanten___selbst____2023___PR.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;

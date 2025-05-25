@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class HashMaps____HM {
+public class HashMaps________HM {
     public static void main(String[] args) {
         HashMap<String, Integer> tiere = new HashMap<>();
         tiere.put("Katze", 2);

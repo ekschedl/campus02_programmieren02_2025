@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SerieTracker {
+public class SerieTracker_______HM {
     public static void main(String[] args) {
         HashMap<String, ArrayList<String>> seriesTracker = new HashMap<>();
 

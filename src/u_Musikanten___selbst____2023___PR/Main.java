@@ -1,6 +1,4 @@
-package u_Musikanten____leer____2023___PR.musikanten;
-
-import java.util.Comparator;
+package u_Musikanten___selbst____2023___PR;
 
 public class Main {
     public static void main(String[] args) {

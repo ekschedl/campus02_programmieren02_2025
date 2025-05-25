@@ -1,0 +1,214 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 .SFNS-Regular;\f1\froman\fcharset0 TimesNewRomanPSMT;\f2\fswiss\fcharset0 Helvetica;
+}
+{\colortbl;\red255\green255\blue255;\red14\green14\blue14;}
+{\*\expandedcolortbl;;\cssrgb\c6700\c6700\c6700;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19700\viewh10960\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2 JUnit Test \'96 Theorie und Struktur\
+\
+JUnit Test \'96 Vier Phasen:\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+
+\f1 \cf2 	1.	Setup / Vorbereitung\
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Initialisierung von Objekten, Daten oder Umgebung\
+	\'95	Beispiel: @Before, @BeforeEach\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+\cf2 	2.	Execution / Ausf\'fchrung\
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Aufruf der zu testenden Methode mit bestimmten Eingaben\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+\cf2 	3.	Verification / \'dcberpr\'fcfung\
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	assertEquals(\'85), assertTrue(\'85) usw. um das Ergebnis zu pr\'fcfen\
+\pard\tqr\tx260\tx420\li420\fi-420\sl324\slmult1\sb240\partightenfactor0
+\cf2 	4.	Teardown / Aufr\'e4umen\
+\pard\tqr\tx500\tx660\li660\fi-660\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Ressourcen freigeben, R\'fccksetzen von Zust\'e4nden\
+	\'95	Beispiel: @After, @AfterEach\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs24 \cf0 \
+\uc0\u11835 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2 \
+TESTEN \'96 Warum?\
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Fehler fr\'fch erkennen spart Zeit und Geld.\
+	\'95	Jeder Test ist wie ein erster Benutzer des Codes.\
+	\'95	Besser, der Entwickler entdeckt den Fehler \'96 nicht der Kunde.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs24 \cf0 \
+\uc0\u11835 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2 \
+Warum wir Testautomatisierung brauchen:\
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Anfangs gen\'fcgt println-Ausgabe.\
+	\'95	Sp\'e4ter wird das Projekt gro\'df und komplex.\
+	\'95	Manuelle Kontrolle wird un\'fcbersichtlich.\
+	\'95	Automatisierte Tests sind zuverl\'e4ssig, schnell und reproduzierbar.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs24 \cf0 \
+\uc0\u11835 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2 \
+Der erste \'93Bug\'94:\
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Begriff stammt aus dem 14. Jahrhundert.\
+	\'95	Ber\'fchmtes Beispiel: 1947 fand Grace Hopper eine Motte in einem Relais.\
+	\'95	Sie dokumentierte den \'84First Computer Bug\'93.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs24 \cf0 \
+\uc0\u11835 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2 \
+Fehlerarten (nach ISTQB):\
+\
+Error (Fehlverhalten des Entwicklers):\
+\'84A human action that produces an incorrect result.\'93\
+\
+Defect / Bug / Fault (Fehler im Programmcode):\
+\'84An imperfection where code does not meet its requirements.\'93\
+\
+Failure (Fehler beim Programmablauf):\
+\'84A component or system does not perform a required function.\'93\
+\
+Infektionskette:\
+Error \uc0\u8594  Defect \u8594  Failure\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs24 \cf0 \
+\uc0\u11835 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2 \
+Debuggen und Testen:\
+\
+Zitat von Dijkstra:\
+\'84Testing kann zeigen, dass Fehler vorhanden sind, aber nicht, dass sie fehlen.\'93\
+\
+Debugging: Fehlerursache finden\
+Testen: Verhalten dauerhaft absichern\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs24 \cf0 \
+\uc0\u11835 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2 \
+Nach einem behobenen Fehler:\
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Testfall schreiben\
+	\'95	Code erneut testen\
+	\'95	Alle Tests vor einem Release durchlaufen lassen\
+	\'95	Nur funktionierenden Code ins Repository \'fcbertragen\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs24 \cf0 \
+\uc0\u11835 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2 \
+Unit Testing \'96 Grundidee:\
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Testet einzelne Methoden/Klassen (Units)\
+	\'95	Mit Frameworks wie JUnit\
+	\'95	Ziel: hohe Testabdeckung, sicheres Verhalten\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs24 \cf0 \
+\uc0\u11835 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2 \
+JUnit Annotations:\
+\
+@Test \uc0\u8594  kennzeichnet eine Testmethode\
+@Ignore oder @Disabled \uc0\u8594  ignoriert den Test\
+@Before, @BeforeEach \uc0\u8594  Vorbereitung vor jedem Test\
+@After, @AfterEach \uc0\u8594  Aufr\'e4umen nach jedem Test\
+@BeforeClass, @BeforeAll \uc0\u8594  Vorbereitung einmalig vor allen Tests\
+@AfterClass, @AfterAll \uc0\u8594  Aufr\'e4umen einmalig nach allen Tests\
+@Test(expected=Exception.class) \uc0\u8594  erwartet eine bestimmte Exception\
+assertThrows(\'85) \uc0\u8594  erwartet Exception (JUnit 5)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs24 \cf0 \
+\uc0\u11835 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2 \
+JUnit Assertions:\
+\
+assertEquals(erwartet, tats\'e4chlich)\
+assertTrue(Bedingung)\
+assertFalse(Bedingung)\
+assertNull(objekt)\
+assertNotNull(objekt)\
+assertSame(obj1, obj2)\
+assertNotSame(obj1, obj2)\
+\
+Wenn Erwartung \uc0\u8800  Realit\'e4t, schl\'e4gt der Test fehl.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs24 \cf0 \
+\uc0\u11835 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2 \
+Beispiel \'96 JUnit 4:\
+\
+public class SimpleTest \{\
+@Before\
+public void setUp() \{ \'85 \}\
+\
+@After\
+public void tearDown() \{ \'85 \}\
+\
+@Test\
+public void testBeispiel() \{\
+Assert.assertEquals(5, methode());\
+\}\
+\}\
+\
+Beispiel \'96 JUnit 5:\
+\
+public class SimpleTest \{\
+@BeforeEach\
+public void setUp() \{ \'85 \}\
+\
+@AfterEach\
+public void tearDown() \{ \'85 \}\
+\
+@Test\
+public void testBeispiel() \{\
+assertEquals(5, methode());\
+\}\
+\}\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs24 \cf0 \
+\uc0\u11835 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf2 \
+Was als N\'e4chstes?\
+\pard\tqr\tx100\tx260\li260\fi-260\sl324\slmult1\sb240\partightenfactor0
+\cf2 	\'95	Weitere JUnit Features\
+	\'95	Mock-Objekte (z.\uc0\u8239 B. mit Mockito)\
+	\'95	Hamcrest-Assertions\
+	\'95	Statisches und dynamisches Testen\
+	\'95	Blackbox- und Whitebox-Tests\
+	\'95	Testgetriebene Entwicklung (TDD)\
+	\'95	Verhaltensgetriebene Entwicklung (BDD)\
+}
